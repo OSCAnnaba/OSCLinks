@@ -26,12 +26,12 @@ function App() {
 					target="_blank"
 					className="p-2 border border-black rounded flex items-center justify-between gap-6"
 				>
-					<FaTelegram className="w-12 h-12 md:w-16 md:h-16 text-[#2AABEE]" />
+					<FaTelegram className="w-12 h-12 md:w-16 md:h-16 text-[#229ED9]" />
 					<span>@OSCommunityChat</span>
 					<MdArrowOutward className="w-8 h-8 md:w-12 md:h-12" />
 				</a>
 				<a
-					href="https://github.com"
+					href="https://github.com/OSCAnnaba"
 					target="_blank"
 					className="p-2 border border-black rounded flex items-center justify-between gap-6"
 				>
@@ -40,7 +40,7 @@ function App() {
 					<MdArrowOutward className="w-8 h-8 md:w-12 md:h-12" />
 				</a>
 				<a
-					href="mailto:example@example.com"
+					href="mailto:osca@univ-annaba.dz"
 					target="_blank"
 					className="p-2 border border-black rounded flex items-center justify-between gap-6"
 				>
