@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes fillBackground {
+   0% {
+      background-position: 100% 0;
+   }
+   100% {
+      background-position: 0 0;
+   }
+}
+
+@keyframes iconAnimation {
+   0%{
+      left: 20px;
+   }
+   100%{
+      left:680px;
+   }
+}
+
+.link-hover {
+   background: linear-gradient(to right, #e6c9a1 20%, transparent 60%);
+   background-position: -100% 0;
+   background-size: 200% 100%;
+   position:relative
+
+}
+
+.link-hover:hover .icon{
+   display: block;
+   position: absolute;
+   animation-name: iconAnimation;
+   animation-duration: 1s;
+   animation-timing-function: ease;
+   animation-fill-mode: forwards;
+}
+
+
+.link-hover:hover {
+   animation-name: fillBackground;
+   animation-duration: 1s;
+   animation-timing-function: ease;
+   animation-fill-mode: forwards;
+}
