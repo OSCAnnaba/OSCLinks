@@ -12,7 +12,7 @@ function App() {
   }[] = [
     {
       type: "Telegram",
-      at: "@OSCumminityChat",
+      at: "@OSCommunityChat",
       path: "https://t.me/OSCommunityChat",
       icon: (
         <FaTelegram className="w-12 h-12 hidden md:w-16 md:h-16 text-[#229ED9] icon" />
@@ -60,13 +60,15 @@ function App() {
             key={link.at}
             href={link.path}
             target="_blank"
-            className="min-h-20 p-2 border border-black rounded-xl flex items-center justify-center link-hover group"
+            className="min-h-20 p-2 border border-black rounded flex items-center justify-center link-hover group"
           >
             {link.icon}
-            <span className="text-lg font-bold italic group-hover:hidden">
+            <span className="tracking-extreme group-hover:hidden uppercase">
               {link.type}
             </span>
-            <span className="hidden group-hover:block ">{link.at}</span>
+            <span className="text-lg font-medium hidden group-hover:block ">
+              {link.at}
+            </span>
           </a>
         ))}
       </div>

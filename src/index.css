@@ -13,10 +13,21 @@
 
 @keyframes iconAnimation {
    0%{
-      left: 20px;
+      left: 5%;
    }
    100%{
-      left:680px;
+      left: 85%;
+   }
+}
+
+@media (min-width: 768px) {
+   @keyframes iconAnimation {
+      0%{
+         left: 5%;
+      }
+      100%{
+         left: 90%;
+      }
    }
 }
 
@@ -25,7 +36,6 @@
    background-position: -100% 0;
    background-size: 200% 100%;
    position:relative
-
 }
 
 .link-hover:hover .icon{
@@ -36,7 +46,6 @@
    animation-timing-function: ease;
    animation-fill-mode: forwards;
 }
-
 
 .link-hover:hover {
    animation-name: fillBackground;
