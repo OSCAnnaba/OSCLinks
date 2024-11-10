@@ -16,8 +16,7 @@ function App() {
 					open source community annaba
 				</h1>
 				<h3 className=" font-medium text-sm md:text-base lg:text-lg text-center">
-					this is the link page for the open-source community annaba club in
-					badji mokhtar university annaba
+					Welcome to the official links page for the Open-Source Community Annaba Club at Badji Mokhtar University
 				</h3>
 			</div>
 			<div className="space-y-5 w-full max-w-3xl text-sm md:text-base lg:text-lg">
