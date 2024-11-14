@@ -3,6 +3,7 @@ import { ReactElement } from "react";
 import { FaTelegram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+
 function App() {
   const links: {
     type: string;
@@ -54,7 +55,8 @@ function App() {
           Annaba Club at Badji Mokhtar University
         </h3>
       </div>
-      <div className="space-y-5 w-full max-w-3xl text-sm md:text-base lg:text-lg">
+      <div className="space-y-5 w-full max-w-3xl text-sm md:text-base lg:text-lg relative overflow-hidden">
+        {" "}
         {links.map((link) => (
           <a
             key={link.at}
