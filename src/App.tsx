@@ -4,13 +4,35 @@ import { FaTelegram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
+const LinkStyle = `
+  min-h-20
+  p-2
+  border
+  border-black
+  rounded
+  flex
+  items-center
+  justify-center
+  link-hover
+  group
+  relative
+  bg-gradient-to-r
+  from-[#e6c9a1]
+  to-transparent
+  bg-[length:200%_100%]
+  bg-[position:-100%_0]
+  hover:animate-fillBackground
+`;
+
+type Link = {
+  type: string;
+  at: string;
+  path: string;
+  icon: ReactElement<IconBaseProps>;
+};
+
 function App() {
-  const links: {
-    type: string;
-    at: string;
-    path: string;
-    icon: ReactElement<IconBaseProps>;
-  }[] = [
+  const links: Link[] = [
     {
       type: "Telegram",
       at: "@OSCommunityChat",
@@ -43,7 +65,7 @@ function App() {
         <img className="flex md:hidden h-36" src="/logo-black-text.svg" />
         <img className="h-36 hidden md:flex" src="/logo-black.png" alt="logo" />
         <h1 className="text-2xl font-bold uppercase hidden md:flex">
-          open source community annaba
+          Open Source Community Annaba
         </h1>
         <h3 className="font-medium text-sm md:text-base lg:text-lg text-center">
           Welcome to the official links page for the Open-Source Community
@@ -56,7 +78,7 @@ function App() {
             key={link.at}
             href={link.path}
             target="_blank"
-            className="min-h-20 p-2 border border-black rounded flex items-center justify-center link-hover group"
+            className={LinkStyle}
           >
             {link.icon}
             <span className="tracking-extreme group-hover:hidden uppercase">
