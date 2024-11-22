@@ -1,3 +1,7 @@
+<div align="center">
+  <a href="mailto:osca@univ-annaba.dz"><img src="https://github.com/user-attachments/assets/f6814c5f-85e2-4868-a389-bf1b882e3e33" width="100"/></a>
+</div>
+
 ## Club Links Page
 
 This project is a simple **React** application designed to serve as a centralized hub for accessing various club-related pages. The goal is to provide users with an easy-to-use interface that allows quick navigation to different club resources and links
