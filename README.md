@@ -1,6 +1,7 @@
 <div align="center">
-  <a href="mailto:osca@univ-annaba.dz"><img src="https://github.com/user-attachments/assets/f6814c5f-85e2-4868-a389-bf1b882e3e33" width="100"/></a>
+  <a href="mailto:osca@univ-annaba.dz"><img src="https://github.com/user-attachments/assets/833ef5a7-5708-43a9-a3e2-ef1eaaa45875" width="100"/></a>
 </div>
+
 
 ## Club Links Page
 
