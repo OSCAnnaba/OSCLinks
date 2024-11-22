@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "serve": "vite preview",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
