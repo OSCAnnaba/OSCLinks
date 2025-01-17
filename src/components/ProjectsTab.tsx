@@ -2,6 +2,7 @@ import { BiLink } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
 import OSCLinks from "../assets/OSCLinks.png";
 import WebEtu from "../assets/WebEtu.png";
+import WebOSC from "../assets/WebOSC.png";
 
 type Project = {
   name: string;
@@ -22,6 +23,14 @@ const projects: Project[] = [
     image: WebEtu,
   },
   {
+    name: "WebOSC",
+    description: "Web Advertising System",
+    tags: ["NextJS", "TailwindCSS"],
+    link: null,
+    repo: "https://github.com/OSCAnnaba/WebOSC",
+    image: WebOSC,
+  },
+  {
     name: "OSCLinks",
     description: "A simple links page for the Open Source Community Annaba",
     tags: ["React", "TailwindCSS"],
@@ -37,11 +46,11 @@ export default function ProjectsTab() {
       {projects.map((project, index) => (
         <div
           key={index}
-          className="bg-white w-full p-2 border border-black rounded-lg space-y-4"
+          className="bg-white w-full p-4 border border-black rounded-md space-y-4"
         >
           <div className="flex">
             <div className="flex-1">
-              <h1 className="text-2xl font-bold">{project.name}</h1>
+              <h1 className="text-xl md:text-2xl font-bold">{project.name}</h1>
               <p className="text-base">{project.description}</p>
             </div>
             <div className="flex items-center p-2 gap-2">
@@ -66,15 +75,15 @@ export default function ProjectsTab() {
               project.tags.map((tag, index) => (
                 <span
                   key={index}
-                  className="bg-blue-300 font-semibold text-sm text-gray-800 px-2 py-1 rounded-lg"
+                  className="bg-blue-300 font-semibold text-sm text-gray-800 px-2 py-1 rounded-md"
                 >
                   {tag}
                 </span>
               ))}
           </div>
           {project.image && (
-            <div className="border-2 border-black blur-sm hover:blur-0 transition duration-300 rounded-lg p-1">
-              <img src={project.image} className="w-full rounded-lg" />
+            <div className="border-1 border-black blur-sm hover:blur-0 transition duration-300 rounded-md">
+              <img src={project.image} className="w-full rounded-md" />
             </div>
           )}
         </div>

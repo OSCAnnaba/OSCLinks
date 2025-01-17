@@ -19,10 +19,16 @@ function App() {
       </div>
       <TabGroup className="w-full space-y-4 max-w-3xl">
         <TabList className="flex gap-3">
-          {["contact", "projects"].map((tabName, index) => (
+          {["Contact", "Projects"].map((tabName, index) => (
             <Tab
               key={index}
-              className="data-[selected]:flex-1 text-lg font-semibold capitalize p-2 rounded-lg bg-amber-500/10 hover:bg-amber-500/15 data-[selected]:bg-amber-500/20 outline-none transition-all duration-300"
+              className={({ selected }) =>
+                `text-lg bg-gradient-to-r font-semibold capitalize px-4 py-2 rounded-md transition-all duration-300 ${
+                  selected
+                    ? "flex-1 from-amber-600/90 to-amber-500 text-white shadow-md [text-shadow:_0_1px_3px_rgba(0,_0,_0,_0.3)]" // Selected Tab
+                    : "from-amber-200/90 to-amber-100 text-amber-800" // Unselected Tabs
+                }`
+              }
             >
               {tabName}
             </Tab>

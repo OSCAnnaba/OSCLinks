@@ -9,7 +9,7 @@ const LinkStyle = `
   p-2
   border
   border-black
-  rounded
+  rounded-md
   flex
   items-center
   justify-center
