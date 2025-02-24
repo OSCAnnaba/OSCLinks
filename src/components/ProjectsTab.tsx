@@ -3,6 +3,7 @@ import { BsGithub } from "react-icons/bs";
 import OSCLinks from "../assets/OSCLinks.png";
 import WebEtu from "../assets/WebEtu.png";
 import WebOSC from "../assets/WebOSC.png";
+import UnivHistory from "../assets/UnivHistory.png";
 
 type Project = {
   name: string;
@@ -16,10 +17,11 @@ type Project = {
 const projects: Project[] = [
   {
     name: "WebEtu",
-    description: "Web-Based Platform for Progres WebEtu ",
+    description:
+      "Web-Based Platform for the Progres Mobile Application (No longer open source due to circumstances beyond our control)",
     tags: ["NextJS", "TailwindCSS"],
     link: "https://webetu.univ-annaba.dz",
-    repo: "https://github.com/OSCAnnaba/WebEtu",
+    repo: null,
     image: WebEtu,
   },
   {
@@ -37,6 +39,15 @@ const projects: Project[] = [
     link: "https://osca.univ-annaba.dz",
     repo: "https://github.com/OSCAnnaba/OSCLinks",
     image: OSCLinks,
+  },
+  {
+    name: "UnivHistory",
+    description:
+      "This project highlights the evolution of the Badji Mokhtar Annaba University website by showcasing various snapshots from different years",
+    tags: ["React", "Vite", "TailwindCSS"],
+    link: "https://univhistory.onrender.com",
+    repo: "https://github.com/OSCAnnaba/UnivHistory",
+    image: UnivHistory,
   },
 ];
 
