@@ -16,7 +16,7 @@ const LinkStyle = `
   link-hover
   group
   relative
-  bg-gradient-to-r
+  bg-linear-to-r
   from-[#e6c9a1]
   to-transparent
   bg-[length:200%_100%]
