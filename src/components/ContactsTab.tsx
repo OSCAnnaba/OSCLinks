@@ -1,7 +1,6 @@
 import { IconBaseProps } from "react-icons";
 import { ReactElement } from "react";
-import { FaTelegram } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { FaTelegram, FaInstagram, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const LinkStyle = `
@@ -56,9 +55,15 @@ export default function ContactTab() {
     },
     {
       type: "Github",
-      at: "OSCAnnaba",
+      at: "@OSCAnnaba",
       path: "https://github.com/OSCAnnaba",
       icon: <FaGithub className={`text-black ${IconStyle}`} />,
+    },
+    {
+      type: "Instagram",
+      at: "@osca_club",
+      path: "https://www.instagram.com/osca_club",
+      icon: <FaInstagram className={`text-[#E4405F] ${IconStyle}`} />,
     },
     {
       type: "Email",
