@@ -93,7 +93,7 @@ export default function ProjectsTab() {
               ))}
           </div>
           {project.image && (
-            <div className="border-1 border-black blur-sm hover:blur-0 transition duration-300 rounded-md">
+            <div className="border-1 border-black blur-xs hover:blur-0 transition duration-300 rounded-md">
               <img src={project.image} className="w-full rounded-md" />
             </div>
           )}

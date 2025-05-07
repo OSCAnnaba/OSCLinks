@@ -23,9 +23,9 @@ function App() {
             <Tab
               key={index}
               className={({ selected }) =>
-                `text-lg bg-gradient-to-r font-semibold capitalize px-4 py-2 rounded-md transition-all duration-300 ${
+                `text-lg bg-linear-to-r font-semibold capitalize px-4 py-2 rounded-md transition duration-500 outline-0 ${
                   selected
-                    ? "flex-1 from-amber-600/90 to-amber-500 text-white shadow-md [text-shadow:_0_1px_3px_rgba(0,_0,_0,_0.3)]" // Selected Tab
+                    ? "flex-1 from-amber-600/90 to-amber-500 text-white shadow-md [text-shadow:0_1px_3px_rgba(0,0,0,0.3)]" // Selected Tab
                     : "from-amber-200/90 to-amber-100 text-amber-800" // Unselected Tabs
                 }`
               }
