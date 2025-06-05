@@ -1,7 +1,7 @@
-import { IconBaseProps } from "react-icons";
-import { ReactElement } from "react";
-import { FaTelegram, FaInstagram, FaGithub } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import { IconBaseProps } from "react-icons"
+import { ReactElement } from "react"
+import { FaTelegram, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa"
+import { MdEmail } from "react-icons/md"
 
 const LinkStyle = `
   min-h-20
@@ -21,7 +21,7 @@ const LinkStyle = `
   bg-[length:200%_100%]
   bg-[position:-100%_0]
   hover:animate-fillBackground
-`;
+`
 
 const IconStyle = `
   w-12
@@ -36,14 +36,14 @@ const IconStyle = `
   sm:group-hover:left-[90%]
   transition-all
   duration-700
-`;
+`
 
 type Link = {
-  type: string;
-  at: string;
-  path: string;
-  icon: ReactElement<IconBaseProps>;
-};
+  type: string
+  at: string
+  path: string
+  icon: ReactElement<IconBaseProps>
+}
 
 export default function ContactTab() {
   const links: Link[] = [
@@ -60,6 +60,12 @@ export default function ContactTab() {
       icon: <FaGithub className={`text-black ${IconStyle}`} />,
     },
     {
+      type: "LinkedIn",
+      at: "@Null",
+      path: "https://www.linkedin.com/company/open-source-community-annaba",
+      icon: <FaLinkedin className={`text-[#0E76A8] ${IconStyle}`} />,
+    },
+    {
       type: "Instagram",
       at: "@osca_club",
       path: "https://www.instagram.com/osca_club",
@@ -71,7 +77,7 @@ export default function ContactTab() {
       path: "mailto:osca@univ-annaba.dz",
       icon: <MdEmail className={`text-gray-600 ${IconStyle}`} />,
     },
-  ];
+  ]
   return (
     <div className="space-y-5 text-sm md:text-base lg:text-lg relative overflow-hidden">
       {links.map((link) => (
@@ -86,5 +92,5 @@ export default function ContactTab() {
         </a>
       ))}
     </div>
-  );
+  )
 }
