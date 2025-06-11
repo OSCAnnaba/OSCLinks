@@ -1,7 +1,7 @@
 import { BiLink } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
 import OSCLinks from "../assets/OSCLinks.png";
-import WebEtu from "../assets/WebEtu.png";
+// import WebEtu from "../assets/WebEtu.png";
 import WebOSC from "../assets/WebOSC.png";
 import UnivHistory from "../assets/UnivHistory.png";
 
@@ -15,15 +15,15 @@ type Project = {
 };
 
 const projects: Project[] = [
-  {
-    name: "WebEtu",
-    description:
-      "Web-Based Platform for the Progres Mobile Application (No longer open source due to circumstances beyond our control)",
-    tags: ["NextJS", "TailwindCSS"],
-    link: "https://webetu.univ-annaba.dz",
-    repo: null,
-    image: WebEtu,
-  },
+  // {
+  //   name: "WebEtu",
+  //   description:
+  //     "Web-Based Platform for the Progres Mobile Application (No longer open source due to circumstances beyond our control)",
+  //   tags: ["NextJS", "TailwindCSS"],
+  //   link: "https://webetu.univ-annaba.dz",
+  //   repo: null,
+  //   image: WebEtu,
+  // },
   {
     name: "WebOSC",
     description: "Web Advertising System",
